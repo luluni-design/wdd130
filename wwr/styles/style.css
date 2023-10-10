@@ -1,24 +1,64 @@
-#content {
+
+nav a {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#hero-msg h1, #hero-msg h4{  
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(126, 128, 128);
+}
+
+
+.button-box{  
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+main section{  
     max-width: 1600px;
     margin: 0 auto;
     text-align: center;
 }
+
 #background {
     height: 725px;
 }
+
+#hero-img{
+    width: 100%;
+}
+
+#msg{
+    width: 100%;
+}
+
+.icon,.logo {
+    width: 80px;
+}
+
+ .logo {display: block;}
+ 
+
+
 body {
-    background-color: #fcfbfb; 
+    background-color:#f8f7ee; 
 }
 header {
     background-color:#9fa8a3
+    
 }
 nav a:hover {
     background-color:#c4ce67;
-    color: #090909
+    color: black
 }   
 .book, .join  {
-    background-color:#d18b3c;
-    color: #090909;
+    background-color:#e3e0cf;
+    color: black;
 }  
 
 .book:hover, .join:hover {
@@ -27,24 +67,33 @@ nav a:hover {
 }
 
 #background {
-    background-color:#9fa8a3
+    background-color:#e3e0cf
 }  
 .msg{
     background-color:#9fa8a3
 }
 footer {
     background-color:#9fa8a3
+    
 }
-nav a {color:#e3e0cf
+footer {
+    color: white;
 }
 
-.home-title{background-color:#faf7f7
+
+
+
+.home-title{background-color:  #f8f7ee ;
+
 }
-h4{
-    background-color:#fcfbfb
+
+h1,h4{
+    background-color:#f8f7ee; 
 }
-.msg h2 {background-color:#9fa8a3}
-.msg p {background-color:#9fa8a3}
+
+.msg h2,.msg p {
+    background-color:#9fa8a3 
+}
 
 
 footer a {background-color:#9fa8a3
@@ -55,30 +104,31 @@ footer a:hover {
 
 .icon,.logo {
     width: 80px;
-    margin-left: 0px;
 }
 
 nav a {
-    text-align: center;
-    color: #151515;
-    text-decoration: none;
+    color: #e3e0cf;
+    text-decoration: none;  
 }    
 .book, .join{
     text-align: center;
-    color: #151515;
+    color: rgb(165, 82, 125);
     text-decoration: none;
 }
 footer a{
     text-align: center;
-    color: #151515;
+    color: #e3e0cf;
     text-decoration: none;
+    text-align: left;
 }
 
 footer p {
     font-size: 1.2em;
+    color: #e3e0cf;
 }
+
 footer p a:hover {
-    text-decoration: underline black;
+    text-decoration: underline rgb(146, 61, 61);
 }    
 
 
