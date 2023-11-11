@@ -362,7 +362,7 @@ nav {
     font-size: 25px;
     margin: 10px;
     float: left;
-    height:400px;
+    height:420px;
     text-align: center;
     margin-top: 100px; 
 }
@@ -389,7 +389,7 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid,.river-grid {
         display: block;
         height: auto;
     }
