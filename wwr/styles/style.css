@@ -12,7 +12,7 @@ nav a {
     max-width: 1600px;
     margin: 0 auto;
     text-align: center;
-    color: rgb(126, 128, 128);
+    color:  rgb(126, 128, 128)
 }
 
 .button-box{  
@@ -54,7 +54,7 @@ body {
     padding: 0;
 }
 h2 {
-    margin: 0;
+    margin: 0 ;
     font-family: 'Young Serif','Roboto','Rock Salt' ;
 }
 header {
@@ -66,7 +66,7 @@ nav a:hover {
     color: rgb(42, 16, 214)
 }   
 
-.book, .join  {
+.book, .join,.information  {
     font-family: 'Young Serif','Roboto','Rock Salt';
     background-color:#e3e0cf;
     color: rgb(165, 82, 125);
@@ -78,7 +78,7 @@ nav a:hover {
     line-height: 4em;    
 }  
 
-.book:hover, .join:hover {
+.book:hover, .join:hover,.information:hover{
     background-color:#c4ce67;
     color: rgb(43, 135, 211);
 }
@@ -88,7 +88,7 @@ nav a:hover {
     margin-bottom: 65px;
 }  
 
-.msg{
+.msg,.taco_msg{
     background-color:#9fa8a3;
     line-height: 1.5em;
     padding: 35px;
@@ -98,7 +98,14 @@ nav a:hover {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-
+.classification_msg{
+    background-color:#9fa8a3;
+    line-height: 1.5em;
+    padding: 35px;
+    
+    
+    box-shadow: 5px 5px 10px #6f7364;
+}
 
 footer {
     background-color:#9fa8a3;
@@ -129,19 +136,24 @@ h4{
     font-family: 'Young Serif','Roboto','Rock Salt' ;  
 }
 
-.msg h2,.msg p {
+.msg h2,.msg p,.classification_msg h2,.taco_msg,.taco_msg p,.classification_msg li {
     background-color:#9fa8a3;
     font-family: 'Young Serif','Roboto','Rock Salt' ;
 }
-.msg h2{color:white;
+.msg h2,.classification_msg h2,.taco_msg h2,.classification_msg li{color:white;
     font-family: 'Young Serif','Roboto','Rock Salt' ;
 }
+.classification_msg li{
+text-align: left;}
 
-.msg p{color:white;
+.msg p,.taco_msg p{color:white;
     font-size: .8em;
     line-height: 1.5em;
     padding-bottom: 15px;
 }
+
+
+
 
 
 footer a {background-color:#9fa8a3
@@ -209,31 +221,31 @@ nav {
     justify-self: center;
     align-self: center;
 }
-#hero {
+#hero,#river {
     display: grid;
     grid-column: 1/4;
 }
-#hero-box {
+#hero-box,#river-box {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
 }
 
-#hero-msg {grid-column: 2/3;
+#hero-msg,#river-msg {grid-column: 2/3;
     grid-row: 1/2;}
     
-#hero-msg h4 {
+#hero-msg h4,#river-msg {
     color: white;
     margin-top: 60px;
 }
-#hero-img {grid-column: 1/4;
+#hero-img,#river-img {grid-column: 1/4;
 }
-#hero {
+#hero,#river {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px; 
 }
-#hero-msg {
+#hero-msg,#river-msg {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
@@ -241,6 +253,9 @@ nav {
 .home-grid{display: grid;
     grid-template-columns: repeat(10,  1fr);
 }
+
+
+
 .card-img, .mountains {
     width: 100%;
 }
@@ -265,6 +280,114 @@ nav {
 
 
 
+
+
+
+
+
+.river-title{
+    font-family: 'Rock Salt', 'Roboto','Young Serif' ;
+    font-size: 2em;
+    margin-top: 10px;
+}
+#river-msg h1, #river-msg h4{  
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(126, 128, 128);
+}
+
+#river-img{
+    width: 100%;
+}
+#river{
+    display: grid;
+    grid-column: 1/4;
+}
+#river-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#river-msg {grid-column: 2/3;
+    grid-row: 1/2;}
+    
+#river-msg h4 {
+    color: white;
+    margin-top: 60px;
+}
+#river-img {grid-column: 1/4;
+}
+
+#river {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+#river-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 250px;
+}
+
+#river-msg h1, #river-msg h4{  
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(126, 128, 128)
+    
+}
+
+.river-img,.map-img{
+    margin-top: 100px;
+    border: 10px solid #efdb69;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+
+.taco_msg ,.classification_msg{
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+.taco_msg { width:40%;
+    font-size: 25px;
+    margin: 10px;
+    float: left;
+    height:400px;
+    text-align: center;
+    margin-top: 100px; 
+}
+.river-img {width: 50%;
+    margin: 10px;   
+    height:450px; 
+    text-align: center;
+    margin-top: 100px; 
+}
+
+.map-img {width: 100%;
+    margin:10px; 
+    float: left; 
+    margin-top: 100px;  
+    height:1200px; 
+    text-align: center;
+}
+
+.classification_msg{ 
+    font-size: 25px;
+    margin: 10px;
+    margin-top: 100px;
+    text-align: center;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -277,13 +400,13 @@ nav {
         display: block;
         padding: 15px;
     }
-    #hero {
+    #hero,#river {
         margin-top: 0;
     }
-    #hero-msg {
+    #hero-msg,#river-msg {
         margin-top: 0;
     }
-    #hero-msg h4 {
+    #hero-msg h4,#river-msg h4 {
         display: none;
     }
     .home-title {
@@ -306,3 +429,6 @@ nav {
         margin-top: 25px;
     }
 }
+
+
+
