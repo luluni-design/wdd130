@@ -335,14 +335,13 @@ nav {
     max-width: 1600px;
     margin: 0 auto;
     text-align: center;
-    color: rgb(126, 128, 128)
+    color: rgb(46, 49, 49)
     
 }
 
 .river-img,.map-img{
     margin-top: 100px;
     border: 10px solid #efdb69;
-    transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -367,7 +366,7 @@ nav {
     margin-top: 100px; 
 }
 .river-img {width: 50%;
-    margin: 10px;   
+    margin: 10px;  
     height:450px; 
     text-align: center;
     margin-top: 100px; 
