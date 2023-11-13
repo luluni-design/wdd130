@@ -363,13 +363,12 @@ nav {
     font-size: 25px;
     margin-left: 10%;
     float: left;
-    height:420px;
+
     text-align: center;
     margin-top: 100px; 
 }
 .river-img {width: 35%;
     margin-left: 5%;
-     
     text-align: center;
     margin-top: 100px; 
 }
@@ -378,9 +377,7 @@ nav {
 
 .map-img {width: 80%;
     margin-top: 100px;  
-    
     text-align: center;
-    
 }
 
 .classification_msg{ 
