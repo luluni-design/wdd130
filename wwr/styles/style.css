@@ -102,8 +102,6 @@ nav a:hover {
     background-color:#9fa8a3;
     line-height: 1.5em;
     padding: 35px;
-    
-    
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -355,14 +353,14 @@ nav {
 
 .taco_msg { width:40%;
     font-size: 25px;
-    margin-left: 80px;
+    margin-left: 100px;
     float: left;
     height:420px;
     text-align: center;
     margin-top: 100px; 
 }
-.river-img {width: 50%;
-    margin: center; 
+.river-img {width: 40%;
+    
     margin-left: 30px;
     height:450px; 
     text-align: center;
@@ -371,8 +369,8 @@ nav {
 
 
 
-.map-img {width: 100%;
-    margin:center; 
+.map-img {width: 90%;
+     
     margin-top: 100px;  
     height:1200px; 
     text-align: center;
@@ -380,7 +378,7 @@ nav {
 
 .classification_msg{ 
     font-size: 25px;
-    margin: center;
+    width: 90%;
     margin-top: 100px;
     text-align: center; 
 }
@@ -431,7 +429,7 @@ nav {
     #background {
         display: none;
     }
-    .mountains, .msg,.taco_msg,.river-img {
+    .mountains, .msg,.taco_msg,.river-img,.map-img {
         width: 80%;
         display: block;
         margin: 0 auto;
