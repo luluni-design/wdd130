@@ -333,7 +333,7 @@ nav {
     max-width: 1600px;
     margin: 0 auto;
     text-align: center;
-    color: rgb(46, 49, 49)
+    color: #6f7364;
     
 }
 
@@ -372,6 +372,7 @@ nav {
     margin-top: 100px;  
     height:1200px; 
     text-align: center;
+    
 }
 
 .classification_msg{ 
@@ -379,6 +380,7 @@ nav {
     width: 90%;
     margin-top: 100px;
     text-align: center; 
+    
 }
 
 
