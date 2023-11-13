@@ -88,13 +88,21 @@ nav a:hover {
     margin-bottom: 65px;
 }  
 
-.msg,.taco_msg{
+.msg{
     background-color:#9fa8a3;
     line-height: 1.5em;
     padding: 35px;
     margin-top: 200px;
     grid-column:6/10;
     grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.taco_msg{
+    background-color:#9fa8a3;
+    line-height: 1.5em;
+    padding: 35px;
+    
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -134,11 +142,11 @@ h4{
     font-family: 'Young Serif','Roboto','Rock Salt' ;  
 }
 
-.msg h2,.msg p,.classification_msg h2,.taco_msg,.taco_msg p,.classification_msg li {
+.msg h2,.msg p,.classification_msg h2,.taco_msg,.taco_msg p.classification_msg li {
     background-color:#9fa8a3;
     font-family: 'Young Serif','Roboto','Rock Salt' ;
 }
-.msg h2,.classification_msg h2,.taco_msg h2,.classification_msg li{color:white;
+.msg h2,.classification_msg h2,.taco_msg h2,.taco_msg p,.classification_msg li{color:white;
     font-family: 'Young Serif','Roboto','Rock Salt' ;
 }
 .classification_msg li{
@@ -345,13 +353,13 @@ nav {
 
 
 .taco_msg ,.classification_msg{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
 
 
-.taco_msg { width:35%;
+.taco_msg{ width:35%;
     font-size: 25px;
     margin-left: 10%;
     float: left;
@@ -429,7 +437,7 @@ nav {
     #background {
         display: none;
     }
-    .mountains, .msg,.taco_msg,.river-img,.map-img {
+    .mountains, .msg,.taco_msg,classification_msg,.river-img,.map-img {
         width: 80%;
         display: block;
         margin: 0 auto;
