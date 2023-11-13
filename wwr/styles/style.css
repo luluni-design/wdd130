@@ -350,31 +350,29 @@ nav {
     font-size: 25px;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
 
 
 .taco_msg { width:40%;
     font-size: 25px;
-    margin: 10px;
+    margin-left: 80px;
     float: left;
     height:420px;
     text-align: center;
     margin-top: 100px; 
 }
 .river-img {width: 50%;
-    margin: 10px;  
+    margin: center; 
+    margin-left: 30px;
     height:450px; 
     text-align: center;
     margin-top: 100px; 
 }
 
+
+
 .map-img {width: 100%;
-    margin:10px; 
-    float: left; 
+    margin:center; 
     margin-top: 100px;  
     height:1200px; 
     text-align: center;
@@ -382,10 +380,24 @@ nav {
 
 .classification_msg{ 
     font-size: 25px;
-    margin: 10px;
+    margin: center;
     margin-top: 100px;
-    text-align: center;
+    text-align: center; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid,.river-grid {
@@ -419,7 +431,7 @@ nav {
     #background {
         display: none;
     }
-    .mountains, .msg {
+    .mountains, .msg,.taco_msg,.river-img {
         width: 80%;
         display: block;
         margin: 0 auto;
