@@ -296,12 +296,8 @@ nav {
     font-size: 2em;
     margin-top: 10px;
 }
-#river-msg h1, #river-msg h4{  
-    max-width: 1600px;
-    margin: 0 auto;
-    text-align: center;
-    color: rgb(126, 128, 128);
-}
+
+
 
 #river-img{
     width: 100%;
@@ -337,12 +333,17 @@ nav {
     margin-top: 250px;
 }
 
-#river-msg h1, #river-msg h4{  
+#river-msg h1{  
     max-width: 1600px;
     margin: 0 auto;
     text-align: center;
-    color: #6f7364;
-    
+    color: #6f7364;   
+}
+ #river-msg h4{  
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #b1a165;   
 }
 
 .river-img,.map-img{
