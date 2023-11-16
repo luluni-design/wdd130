@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
+    <title >Whitewater Rafting Vacations | Dry Oar Boating |Contact Us</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -18,43 +18,22 @@
             <a href="site-plan-rafting.html">Site Plan</a>
             <a href="contactus.html">About Us</a>
         </nav>
-    </header>
-    <div id="hero">
-      <div id="hero-box">  
-        <img id="hero-img" src="images/hero.png"  alt="People enjoying white water rafting">    
-    </div>
-    <section id="hero-msg">
-        <h1 class="home-title">Contact Us </h1>
-        <h4>About Us</h4>
-        <div class='button-box'>
-            <a class='book' href="contactus.html">Book Now</a>
-        </div>       
-    </section>
-    </div> 
-<main>
+    </header> 
+<main class="contact-form">
 <div id="feedback"></div>                 
 <form action="/my-handling-form-page" method="post">
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="user_name" />
-  </div>
-
-  <div>
-    <label for="mail">Email:</label>
-    <input type="email" id="mail" name="user_email" />
-  </div>
-
-  <div>
-    <label for="msg">Message:</label>
-    <textarea id="msg" name="user_message"></textarea>
-  </div>
-
-  <div class="button">
-    <button type="submit">Send your message</button>
-  </div>
+    <fieldset>
+        <legend>Contact info</legend>
+            <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+        <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email" />
+            <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+    </fieldset>
+        <button type="submit">Send your message</button>
 </form>
-
-               
+            
 
 </main>
 <footer>
