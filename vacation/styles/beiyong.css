@@ -69,20 +69,8 @@ nav a:hover
 {
                         background-color: rgba(209, 150, 201, 0.7);
                         font-family: 'Young Serif','Roboto','Rock Salt';
-                        color: whitesmoke; 
-                        text-decoration: none;
-                        font-size: 18px;
-                        padding: 15px 30px;
-                        margin-top: 50px;
-                        border-radius: 5px;
-                        line-height: 4em;  
-}
-
-#choice
-{
-                        background-color: rgba(209, 150, 201, 0.7);
-                        font-family: 'Young Serif','Roboto','Rock Salt';
-                        color: whitesmoke ; 
+                        color: whitesmoke
+                        ; 
                         text-decoration: none;
                         font-size: 18px;
                         padding: 15px 30px;
@@ -97,16 +85,6 @@ nav a:hover
                         color: rgb(146, 61, 61)
                         
 }
-#hotel{
-                        color:rgb(146, 61, 61); 
-                        font-size: 40px;
-                        margin: 0;
-                        padding: 0;
-                        text-decoration: none;
-                        text-align: center;
-}
-#hotel:hover {background-color:#6773ce;;}
-
 #background
 {
                         background-color:#efede2; 
@@ -267,11 +245,10 @@ nav
   text-align:center;
 	padding:10px;
   width: 100%;
-  display: inline-block;
+  display: inline;
 	text-indent : 50px;
 	font-family:  'Young Serif','Roboto','Rock Salt' ;
-  color: rgb(137, 136, 136);
-  writing-mode: horizontal-tb;  
+  color: rgb(137, 136, 136);  
 }
 
 .content-msg{
@@ -283,25 +260,12 @@ nav
   font-size: 25px;
   width: 90%;
   margin-top: 100px;
-  text-align: left; 
+  text-align: center; 
 }
 
 .content-msg h2 {font-family: 'Rock Salt', 'Roboto','Young Serif' ;
 font-size: 15em;}
 
-#beachviewlocation{
-  background-color:#b7dec8;
-  line-height: 1.5em;
-  padding: 35px;
-  box-shadow: 5px 5px 10px #6f7364;
-  display: block;
-  font-size: 25px;
-  width: 80%;
-  margin-top: 100px;
-  text-align: left; 
-  font-family: 'Young Serif','Rock Salt', 'Roboto';
-  color: rgb(137, 136, 136);  
-}
 
 
 #left, #right
@@ -328,8 +292,7 @@ font-size: 15em;}
   
 }
 
-#choice{width: 90%;
-}
+#choice{width: 90%;}
 #beachviewlocation
 {
 
@@ -337,38 +300,11 @@ font-size: 15em;}
   display:inline-block;
 }
 
-#oahumaplocation li{
-  background-color:#9fa8a3;
-  line-height: 1.5em;
-  padding: 35px;
-  box-shadow: 5px 5px 10px #6f7364;
-}
-#oahumaplocation li {
-  background-color:#9fa8a3;
-  font-family: 'Young Serif','Roboto','Rock Salt' ;
-}
-#oahumaplocation li{color:white;
-  font-family: 'Young Serif','Roboto','Rock Salt' ;
-}
-#oahumaplocation li{
-text-align: left;}
-
-
-#oahumaplocation li{ 
-  font-size: 25px;
-  margin-top: 100px;
-  text-align: center; 
-  
-}
-#oahumaplocation li
+#oahumaplocation
 {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
+	margin-left:5%;
+  display:inline-block;
 }
-
-
-
 
 
 
@@ -415,3 +351,6 @@ text-align: left;}
       margin-top: 25px;
   }
 }
+
+/*https://coolors.co/0081a7-00afb9-fdfcdc-fed9b7-f07167
+/*<main class="home-grid">
