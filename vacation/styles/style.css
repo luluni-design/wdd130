@@ -86,7 +86,7 @@ nav a:hover
                         text-decoration: none;
                         font-size: 18px;
                         padding: 15px 30px;
-                        margin-top: 50px;
+                        margin-top: 30px;
                         border-radius: 5px;
                         line-height: 4em;  
 }
@@ -197,6 +197,8 @@ footer .social img
                         transition: transform .5s;
                         box-shadow: 5px 5px 10px #6f7364;
 }
+
+
 main section img 
 {
                         box-sizing: border-box;
@@ -225,9 +227,9 @@ nav
 {
                         grid-column: 2/3;
                         grid-row: 1/2;
-                        margin-top: 100px;
+                        margin-top: 15px;
                         color: white;
-                        margin-top: 100px
+                        
 }
 #sunset-box {
                         grid-column: 1/4;
@@ -289,12 +291,12 @@ nav
 .content-msg h2 {font-family: 'Rock Salt', 'Roboto','Young Serif' ;
 font-size: 15em;}
 
-#beachviewlocation{
+#beachviewlocation,#oahumaplocation{
   background-color:#b7dec8;
   line-height: 1.5em;
   padding: 35px;
   box-shadow: 5px 5px 10px #6f7364;
-  display: block;
+  display: inline-block;
   font-size: 25px;
   width: 80%;
   margin-top: 100px;
@@ -303,71 +305,59 @@ font-size: 15em;}
   color: rgb(137, 136, 136);  
 }
 
+#beachviewlocation{margin-left: 10%;
+  float: left;
+}
 
 
+
+#choose-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left, #right {
+  margin: 0 10px;
+}
 
 #left, #right
 {
 	display:inline-block;
-}
-
-
-#left{ width:48%;
-  font-size: 20px;
-  margin-left: 1%;
-  float: left;
-  text-align: center;
   margin-top: 50px;
+  box-shadow: 5px 5px 10px #6f7364; 
+  margin-left: 2%;
+  margin-right:1%;
+  justify-content: center;
+  align-items: center;
   
 }
 
-#right{ width:48%;
-  font-size: 20px;
-  margin-left: 1%;
-  float: right;
-  text-align: center;
-  margin-top: 50px; 
-  
-}
+#left{float:left}
+#right{margin-right: 2%;}
 
-#choice{width: 90%;
+
+
+
+
+
+
+
+  
+
+
+
+
+#choice{
+  width: 30%;
 }
-#beachviewlocation
+#beachviewlocation,#oahumaplocation
 {
-
 	margin-left:10%;
   display:inline-block;
 }
 
-#oahumaplocation li{
-  background-color:#9fa8a3;
-  line-height: 1.5em;
-  padding: 35px;
-  box-shadow: 5px 5px 10px #6f7364;
-}
-#oahumaplocation li {
-  background-color:#9fa8a3;
-  font-family: 'Young Serif','Roboto','Rock Salt' ;
-}
-#oahumaplocation li{color:white;
-  font-family: 'Young Serif','Roboto','Rock Salt' ;
-}
-#oahumaplocation li{
-text-align: left;}
 
-
-#oahumaplocation li{ 
-  font-size: 25px;
-  margin-top: 100px;
-  text-align: center; 
-  
-}
-#oahumaplocation li
-{
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-}
 
 
 
@@ -388,7 +378,7 @@ text-align: left;}
       display: block;
       padding: 15px;
   }
-  #hero,#river {
+  #hero,#river,#left, #right {
       margin-top: 0;
   }
   #hero-msg,#river-msg {
