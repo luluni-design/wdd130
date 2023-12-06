@@ -19,11 +19,18 @@ nav a
 h4{ 
                         font-family: 'Young Serif','Roboto','Rock Salt' ;  
 }
-#snorkel-msg h4{font-family: 'Young Serif','Roboto','Rock Salt' ;
- }
+
+h3{ 
+  font-family: 'Rock Salt','Young Serif','Roboto' ;  
+  text-align: center;
+}
+
+#snorkel-msg h4{font-family: 'Young Serif','Roboto','Rock Salt' ; }
 #snorkel-msg h1{font-family: 'Rock Salt','Young Serif','Roboto' ; }
-#fruit-msg h4{font-family: 'Young Serif','Roboto','Rock Salt' ; }  
-#fruit-msg h1{font-family:  'Rock Salt','Young Serif','Roboto' ; }
+#fruit-msg h4{font-family: 'Young Serif','Roboto','Rock Salt' ;
+              color: rgb(146, 61, 61) }  
+#fruit-msg h1{font-family: 'Rock Salt','Young Serif','Roboto' ;
+              color: rgb(146, 61, 61) }
 
 .button-box
 {
@@ -246,7 +253,7 @@ nav
                         justify-content: space-around;
 }
 
-#sunset,#snorkel
+#sunset,#snorkel,#fruit
 {
                         display: grid;
                         grid-template-columns: 1fr 3fr 1fr;
@@ -266,7 +273,7 @@ nav
 {
                       grid-column: 2/3;
                       grid-row: 1/2;
-                      margin-top: 150px;
+                      margin-top: 250px;
                       color: white;                    
 }
 #snorkel-msg
@@ -277,10 +284,15 @@ nav
                       color: white;                    
 }
 
-#sunset-box,#snorkel-box,#fruit-box {
+#sunset-box,#snorkel-box {
                         grid-column: 1/4;
                         grid-row: 1/3;
                         z-index: -1;
+}
+#fruit-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -5;
 }
 .card-img, .Mokolii 
 {
@@ -356,6 +368,7 @@ nav
   display: block;
   font-size: 25px;
   width: 90%;
+  margin-bottom: 100px;
   margin-top: 100px;
   text-align: left; 
 }
@@ -430,6 +443,204 @@ font-size: 15em;}
 }
 
 
+body{font-family: Arial;
+  margin: 0;}
+
+
+
+* {
+box-sizing: border-box;
+}
+
+img {
+vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 20px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+font-size: 25px;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+
+
+
+
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+
+  /* To see the limits of the form */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+div + div {
+  margin-top: 1em;
+}
+
+u1{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+form li +li {
+  margin-top: 1em;
+}
+
+label {
+  /* To make sure that all label have the same size and are properly align */
+  display: inline-block;
+  width: 90px;
+  /*text-align: right;*/
+}
+
+
+
+input,
+textarea {
+  /* To make sure that all text field have the same font settings
+     By default, textarea are set with a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text field */
+  width: 300px;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text field with their label */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+
+  /* To allow users to resize any textarea vertically
+     It works only on Chrome, Firefox and Safari */
+  resize: vertical;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent the same space as the space between
+     the labels and their text fields */
+  margin-left: 0.5em;
+}
+
+
+.feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;      
+}
+.moveDown {
+  margin-top: 3em;
+}
+
+
+
+
 
 
 
@@ -482,3 +693,5 @@ font-size: 15em;}
       margin-top: 25px;
   }
 }
+
+

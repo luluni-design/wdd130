@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodies</title>
-    <link rel="stylesheet" href="styles/beiyong.css" >
+    <link rel="stylesheet" href="styles/style.css" >
 </head>
 <body>
     <div id="content">
@@ -12,15 +12,15 @@
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo4.png" alt="logo">
             </a>
-            <nav >
+            <nav>
                 <a href="index.html">Home</a>
-                <a href="outdoor-adventage.html" id="firsttime">Adventures</a>
+                <a href="outdoor-adventage.html" >Adventures</a>
                 <a href="foodies.html">Foodies</a>                                        
             </nav>                                      
         </header>
         <div id="fruit"> 
             <div id="fruit-box"> 
-            <img id="fruit-img" src="images/fruit.png" alt="fruit" width="1250" height="700" >  
+            <img id="fruit-img" src="images/fruit.png" alt="fruit"  >  
         </div>
         <section id="fruit-msg">
               <h1 class="foodies-title">Eat Like a Local</h1>
@@ -31,28 +31,111 @@
         </section>
         </div>
         <main>
+            <div class="content-msg">
             <h3>Food in Hawai'i </h3>
       <p>
         Oahu is home to cuisine from around the world. No matter where you go on the island today, there are delicious delicacies waiting for you to try. We have professional food explorers to take you through Hawaii’s delicious food!Don't miss these below.Come and join us for a culinary journey!
         Take your taste buds off the beaten path with the flavors of Hawai'i. Discover local comfort foods, island favorites, and authentic tastes from farm-to-table and gourmet, to hidden Dots and must-trys.
       </p>
-        <img src="images/01header-Hawaii_foodie-06-1.jpg" alt="Hawaii Foodie" width="1250" height="700">
-        <div id="Food">
-            <ul>
-                <li>Abundant Food</li>
-                <li>Shave Ice</li>
-                <li>Pupu</li>
-                <li>Malasadas</li>
-                <li>Loco Moco</li>
-                <li>Food Truck</li>
-             </ul>
-        </div>
-        <h3>Hawaiian Luau </h3>
-      <p>
-        No trip to Hawaii is complete without attending one of these traditional celebrations of food and culture. Feast on kālua pork cooked in an imu (underground oven), laulau (beef, pork, chicken or fish wrapped in taro leaves) and poi (taro starch) while hula dancers tell stories through their graceful movements. 
-      </p>
+    </div>
+    <h2 style="text-align:center">Gourmet feast</h2>
+                 
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/Luau-plate.jpg" style="width:100%" alt="Luau Plate">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/shave-ice.jpg" style="width:100%" alt="Shave Ice">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/04097-Malasadas.jpg" style="width:100%" alt="Malasadas">
+      </div>
         
-
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/shrimp-truck.png" style="width:100%" alt="Shrimp Truck">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/poke-bowl.jpg" style="width:100%" alt="Poke Bowl">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/hawaii-pineapple-pizza.jpg" style="width:100%" alt="Pineapple Pizza">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)"></a>
+      <a class="next" onclick="plusSlides(1)"></a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/Luau-plate.jpg" style="width:100%" onclick="currentSlide(1)" alt="Luau plate">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/shave-ice.jpg" style="width:100%" onclick="currentSlide(2)" alt="Shave-ice">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/04097-Malasadas.jpg" style="width:100%" onclick="currentSlide(3)" alt="Malasadas">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/shrimp-truck.png" style="width:100%" onclick="currentSlide(4)" alt="Shrimp Truck">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/poke-bowl.jpg" style="width:100%" onclick="currentSlide(5)" alt="Poke Bowl">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="images/hawaii-pineapple-pizza.jpg" style="width:100%" onclick="currentSlide(6)" alt="Pineapple Pizza ">
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <div class="content-msg">
+   <h3>Hawaiian Luau </h3>
+   <p>
+     No trip to Hawaii is complete without attending one of these traditional celebrations of food and culture. Feast on kālua pork cooked in an imu (underground oven), laulau (beef, pork, chicken or fish wrapped in taro leaves) and poi (taro starch) while hula dancers tell stories through their graceful movements. 
+   </p>
+    </div>  
         </main> 
         <footer><p>&copy; 2023-Lulu Ni - Vacation</p>
             <p ><a href="site-plan-vacation.html">Site Plan</a></p>
